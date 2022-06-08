@@ -38,9 +38,8 @@ void checkSecurity(String[] people)
 
 
 // використані методики 
-// Replace Data Value with Object -> NameKeychain
 // Consolidate Duplicate Conditional Fragments
-// Replase Temp With Query
+// Replase Temp With Query -> NameKeychain
 // Substitute Algorithm
 
 void checkSecurity(String[] people)
