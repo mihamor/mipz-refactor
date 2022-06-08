@@ -36,6 +36,13 @@ void checkSecurity(String[] people)
 // судячи з контексту, константи імен це sensetive дані, які можна скомпроментувати
 // треба їх перенести в якесь більш секьюрне середовище, типу Keychain з шифруванням
 
+
+// використані методики 
+// Replace Data Value with Object -> NameKeychain
+// Consolidate Duplicate Conditional Fragments
+// Replase Temp With Query
+// Substitute Algorithm
+
 void checkSecurity(String[] people)
 {
   String[] whitelistedNames = NameKeychain.getWhitelistedNames();
@@ -88,6 +95,10 @@ private:
 // також використовуючи різні класси можна рознести потрібні поля, а не группувати всі поля в одному классі
 // використати можна абстрактний класс або інтерфейс, залежачи від контексту
 
+// metodics 
+// Replace Conditional with Polymorphism
+// Rename Field
+
 public abstract class Transport {
   public:
     Transport() {
@@ -108,8 +119,8 @@ public class Car : Transport {
 
 public class Plane : Transport {
   private:
-    int m_takeOffTime;
-    int m_landingTime;
+    int takeOffTime;
+    int landingTime;
 
   public:
     override int GetSpeed(int distance, int time) {
@@ -120,8 +131,8 @@ public class Plane : Transport {
 
 public class Submarine : Transport {
   private:
-     int m_diveTime;
-     int m_ascentTime;
+     int diveTime;
+     int ascentTime;
 
   public:
     override int GetSpeed(int distance, int time) {
