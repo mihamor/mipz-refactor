@@ -5,7 +5,7 @@
 
 Мороз Михайло Володимирович КП-11мп
 
-```
+```cs
 
 // task1
 void checkSecurity(String[] people)
