@@ -30,11 +30,11 @@ void checkSecurity(String[] people)
 
 void checkSecurity(String[] people)
 {
-	String[] whitelistedNames = NameKeychain.getWhitelistedNames();
-	boolean found = people.Any(
-		person => whitelistedNames.Contains(person)
-	);
-	if (found) { sendAlert(); }
+  String[] whitelistedNames = NameKeychain.getWhitelistedNames();
+  boolean found = people.Any(
+    person => whitelistedNames.Contains(person)
+  );
+  if (found) { sendAlert(); }
 }
 
 
@@ -81,43 +81,43 @@ private:
 // використати можна абстрактний класс або інтерфейс, залежачи від контексту
 
 public abstract class Transport {
-	public:
-		Transport() {
-			// ...
-		}
-	abstract GetSpeed(int distance, int time);
+  public:
+    Transport() {
+      // ...
+    }
+  abstract GetSpeed(int distance, int time);
 
 }
 
 public class Car : Transport {
-	public:
-		override int GetSpeed(int distance, int time) {
-			return distance / time;
-		}
+  public:
+    override int GetSpeed(int distance, int time) {
+      return distance / time;
+    }
 
-	// ...
+  // ...
 }
 
 public class Plane : Transport {
-	private:
- 		int m_takeOffTime;
- 		int m_landingTime;
+  private:
+    int m_takeOffTime;
+    int m_landingTime;
 
-	public:
-		override int GetSpeed(int distance, int time) {
-			return distance/(time - getTakeOffTime() - getLandingTime());
-		}
-	// ...
+  public:
+    override int GetSpeed(int distance, int time) {
+      return distance/(time - getTakeOffTime() - getLandingTime());
+    }
+  // ...
 }
 
 public class Submarine : Transport {
-	private:
- 		int m_diveTime;
- 		int m_ascentTime;
+  private:
+     int m_diveTime;
+     int m_ascentTime;
 
-	public:
-		override int GetSpeed(int distance, int time) {
-			return distance / (time - getDiveTime() - getAscentTime());
-		}
-	// ...
+  public:
+    override int GetSpeed(int distance, int time) {
+      return distance / (time - getDiveTime() - getAscentTime());
+    }
+  // ...
 }
